@@ -1,0 +1,5 @@
+a.rstblock[href^="/shop/"] @biddingShopList {
+  &[data-rst-id=$shop_id|Number data-bidding=$bid_info|try_parse_json]{$bidding = true};
+  &[data-bidding=""]{$bidding = false};
+  .rstblock-logo img[src=$logo_url];
+}

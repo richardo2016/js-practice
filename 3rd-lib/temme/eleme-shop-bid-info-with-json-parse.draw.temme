@@ -1,0 +1,19 @@
+filter try_parse_json () {
+  var json = this.toString()
+  if (json) {
+    try {
+      /* dangerous so you must catch it */
+      json = eval("json = " + json)
+    } catch (e) {
+    }
+  }
+  // console.log('json', typeof json, json)
+
+  return json
+}
+
+a.rstblock[href^="/shop/"] @biddingShopList {
+  &[data-rst-id=$shop_id|Number data-bidding=$bid_info|try_parse_json]{$bidding = true};
+  &[data-bidding=""]{$bidding = false};
+  .rstblock-logo img[src=$logo_url];
+}
