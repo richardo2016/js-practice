@@ -1,0 +1,16 @@
+{
+  "name": "pug-jstransformer",
+  "version": "1.0.0",
+  "description": "pug & jstransformer's trial.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "richardo2016 <richardo2016@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-env": "^1.6.1"
+  },
+  "devDependencies": {}
+}

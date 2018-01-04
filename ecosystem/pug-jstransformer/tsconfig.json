@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "lib": [
+        "es6",
+        "dom",
+        "es2017.object",
+        "es2017"
+    ],
+    "module": "esnext",
+    "moduleResolution": "browser",
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowJs": true,
+    "jsx": "react",
+
+    // paths
+    "baseUrl": "./",
+    "paths": {
+    }
+  },
+  "include": [
+  ],
+  "exclude": [
+    "node_modules" // don't run on any code in the node_modules directory
+  ],
+  "compileOnSave": true
+}

@@ -1,0 +1,25 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "chrome": 33,
+                    "browsers": [
+                        "safari >= 8"
+                    ]
+                },
+                "useBuiltIns": "usage",
+                "modules": false,
+                "exclude": [
+                    "transform-async-to-generator"
+                ],
+                "debug": true
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-es2015-modules-umd"
+    ],
+    "comments": false
+}
