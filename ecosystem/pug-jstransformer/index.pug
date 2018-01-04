@@ -7,11 +7,17 @@ html
   body
     <script>
       :typescript
-        const a = 'http'
-        console.log('a', a)
+        const a = 'a:http';
+        console.log('a', a);
+        async function fn () {
+          return 1
+        };
+        fn().then(res => {
+          console.log('res', res);
+        });
     </script>
     <script>
       :babel
-        const b = 'http'
-        console.log('b', b)
+        const b = 'b:http';
+        console.log('b', b);
     </script>
